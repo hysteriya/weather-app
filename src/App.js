@@ -1,39 +1,39 @@
 import React, {useState,} from 'react'
 import axios from 'axios'
-import { useAuth0 } from "@auth0/auth0-react";
+//import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
-  //log functions
-  const { isAuthenticated, loginWithRedirect, logout, user, isLoading } = useAuth0();
+  // //log functions
+  // const { isAuthenticated, loginWithRedirect, logout, user, isLoading } = useAuth0();
 
-  const LoginButton = () => {
-    return (
-      <div className='login button'>
-        <button onClick={() => loginWithRedirect()}>Log In</button>
-      </div>
-    );
-  };
+  // const LoginButton = () => {
+  //   return (
+  //     <div className='login button'>
+  //       <button onClick={() => loginWithRedirect()}>Log In</button>
+  //     </div>
+  //   );
+  // };
 
-  const LogoutButton = () => {
-    return (
-      <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-        Log Out
-      </button>
-    );
-  };
+  // const LogoutButton = () => {
+  //   return (
+  //     <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+  //       Log Out
+  //     </button>
+  //   );
+  // };
 
-  const Profile = () => {
-    if (isLoading) {
-      return <div>Loading ...</div>;
-    }
-    return (
-      isAuthenticated && (
-        <div>
-          <p>Welcome {user.email}</p>
-        </div>
-      )
-    );
-  };
+  // const Profile = () => {
+  //   if (isLoading) {
+  //     return <div>Loading ...</div>;
+  //   }
+  //   return (
+  //     isAuthenticated && (
+  //       <div>
+  //         <p>Welcome {user.email}</p>
+  //       </div>
+  //     )
+  //   );
+  // };
   
   
   const [data,setData]=useState({})
@@ -53,7 +53,7 @@ function App() {
 
   return (
   <div className="App">
-    <div className='navbar'>
+    {/* <div className='navbar'>
     <div className='login'>
       {
         isAuthenticated ? (
@@ -64,7 +64,7 @@ function App() {
           :( <LoginButton />)
       }
     </div>
-    </div>
+    </div> */}
 
 
     <div className='search'>

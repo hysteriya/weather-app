@@ -72,7 +72,7 @@ h1{
 
 .App .search{
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .App input{
@@ -115,7 +115,7 @@ h1{
   justify-content: space-evenly;
   text-align: center;
   width: 100%;
-  height: 26%;
+  height: 20%;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 12px;
