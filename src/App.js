@@ -38,7 +38,7 @@ function App() {
   
   const [data,setData]=useState({})
   const [location, setLocation]= useState('')
-  const url=`http://api.weatherapi.com/v1/current.json?key=f6bfbe9376064c2aba9154443232011&q=${location}`
+  const url=`https://api.weatherapi.com/v1/current.json?key=f6bfbe9376064c2aba9154443232011&q=${location}`
   const searchLoc =(event)=>{
     if (event.key==='Enter'){
       axios.get(url).then((response)=>{
