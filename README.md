@@ -1,3 +1,6 @@
+# Deployed On
+https://main--resonant-kashata-e29dae.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
